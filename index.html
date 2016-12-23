@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeScript..</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/css/custum.css">
+    <link rel="stylesheet" href="styles/css/normalize.css">
+    <script type="text/javascript" src="styles/js/jquery.min.js"></script>
+    <script type="text/javascript" src="styles/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="styles/js/form.js"></script>
+    <script type="text/coffeescript" src="styles/coffee/form.coffee"></script>
+    <script type="text/javascript" src="styles/js/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <form class=" form-horizontal" action="" method="post">
+            <legend>Connect Us Today...<span class="simley">&#x263A;</span>
+            </legend>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">First Name<span class="star"><sup>*</sup></span> :</label>
+                <div class="col-sm-5 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="firstname" id='firstname' placeholder="First Name" class="form-control" type="text">
+                    </div>
+                    <span class="cursorleft" id="rightfirst"><span class="happy">&#x263A;</span></span>
+                    <span class="cursorright" id="wrongfirst"><span class="sad">&#x2639;</span></span>
+                    <p id="errormessage1"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Last Name<span class="star"><sup>*</sup></span> :</label>
+                <div class="col-sm-5 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="lastname" id='lastname' placeholder="last Name" class="form-control" type="text">
+                    </div>
+                    <span class="cursorleft" id="rightlast"><span class="happy">&#x263A;</span></span>
+                    <span class="cursorright" id="wronglast"><span class="sad">&#x2639;</span></span>
+                    <p id="errormessage2"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">E-Mail<span class="star"><sup>*</sup></span> :</label>
+                <div class="col-sm-5 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input name="email" id='email' placeholder="E-Mail Address" class="form-control" type="text">
+                    </div>
+                    <span class="cursorleft" id="rightemail"><span class="happy">&#x263A;</span></span>
+                    <span class="cursorright" id="wrongemail"><span class="sad">&#x2639;</span></span>
+                    <p id="errormessage3"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Retype E-Mail<span class="star"><sup>*</sup></span> :</label>
+                <div class="col-sm-5 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input name="email" id='Retypeemail' placeholder="Retype Your E-Mail Address" class="form-control" type="text">
+                    </div>
+                    <span class="cursorleft" id="rightRetypeemail"><span class="happy">&#x263A;</span></span>
+                    <span class="cursorright" id="wrongRetypeemail"><span class="sad">&#x2639;</span></span>
+                    <p id="errormessage4"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Phone<span class="star"><sup>*</sup></span> :</label>
+                <div class="col-sm-5 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                        <input name="phone" id="phone" placeholder="9999999999" class="form-control" type="text">
+                    </div>
+                    <span class="cursorleft" id="rightphone"><span class="happy">&#x263A;</span></span>
+                    <span class="cursorright" id="wrongphone"><span class="sad">&#x2639;</span></span>
+                    <p id="errormessage5"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">State<span class="star"><sup>*</sup></span> :</label>
+                <div class="col-sm-5 selectContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                        <select id='state' class="form-control selectpicker">
+                            <option>Please Choose your state</option>
+                            <option>Alabama</option>
+                            <option>Alaska</option>
+                            <option>Arizona</option>
+                            <option>Arkansas</option>
+                            <option>California</option>
+                            <option>Colorado</option>
+                            <option>Connecticut</option>
+                        </select>
+                    </div>
+                    <span class="cursorleft" id="rightstate"><span class="happy">&#x263A;</span></span>
+                    <span class="cursorright" id="wrongstate"><span class="sad">&#x2639;</span></span>
+                    <p id="errormessage6"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Do you have bike<span class="star"><sup>*</sup></span> :</label>
+                <div class="col-sm-5 radioContainer">
+                    <div class="radio">
+                        Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="radio1" value="yes" /> No&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="radio1" value="no" />
+                    </div>
+                    <p id="errormessage7"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Birth<span class="star"><sup>*</sup></span> :</label>
+                <div class="col-sm-5 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input name="birth" id='birth' placeholder="dd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyy" class="form-control" type="text" maxlength="10">
+                    </div>
+                    <span class="cursorleft" id="rightbirth"><span class="happy">&#x263A;</span></span>
+                    <span class="cursorright" id="wrongbirth"><span class="sad">&#x2639;</span></span>
+                    <p id="errormessage8"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Address<span class="star"><sup>*</sup></span> :</label>
+                <div class="col-sm-5 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        <textarea class="form-control" id="address" name="comment" placeholder="Project Description"></textarea>
+                    </div>
+                    <span class="cursorleft2" id="rightaddress"><span class="happy">&#x263A;</span></span>
+                    <span class="cursorright3" id="wrongaddress"><span class="sad">&#x2639;</span></span>
+                    <p id="errormessage9"></p>
+                </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="col-sm-8 control-label terms"><sup>*</sup> all the above details are myself self declered</label>
+                <div class="col-sm-4 inputGroupContainer">
+                    <div class="input-group">
+                        <input name="checkbox" id='checkbox' class="cursorright1" type="checkbox">
+                    </div>
+                    <p class="cursorcheck" id="errormessage10"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-7 control-label">
+                    <button type="submit" id="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

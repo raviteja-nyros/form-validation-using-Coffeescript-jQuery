@@ -1,0 +1,144 @@
+body {
+    color: grey;
+    background-color: silver;
+}
+p {
+    font-size: 12px !important;
+    color: #ff8080 !important;
+    padding: 3px 0px 0px 40px !important;
+}
+legend {
+    font-size: 22px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: arial;
+    color: #005266;
+    font-weight: bold;
+    box-shadow: 0px 0px 14px -3px black;
+    height: 45px;
+    padding: 8px 0px 0px 5px !important;
+}
+.success {
+    box-shadow: none !important;
+}
+input {
+    border-color: #00a2de !important;
+    border-radius: 5px !important;
+}
+span {
+    border-color: #00a2de !important;
+    border-radius: 5px !important;
+}
+select {
+    border-color: #00a2de !important;
+    border-radius: 5px !important;
+}
+textarea {
+    border-color: #00a2de !important;
+    border-radius: 5px !important;
+}
+button {
+    background-color: #008fb3 !important;
+    border-style: none !important;
+    margin: 0 auto !important;
+}
+label {
+    color: #008fb3;
+}
+.glyphicon {
+    color: #008fb3;
+}
+.radio {
+    bottom: 6px;
+}
+.form-control {
+    color: grey;
+}
+.glyphicon-send {
+    color: white;
+}
+.terms {
+    color: #ff5c33 !important;
+}
+form {
+    margin: auto;
+    background-color: white;
+    width: 55%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px -2px black;
+}
+.glyphicon-ok {
+    color: green;
+}
+.glyphicon-remove {
+    color: red;
+}
+.cursorleft {
+    float: right;
+    bottom: 37px;
+    left: 24px;
+    position: relative;
+    display: none;
+}
+.cursorright {
+    float: right;
+    bottom: 29px;
+    left: 22px;
+    position: relative;
+    display: none;
+}
+.cursorright1 {
+    float: right;
+    bottom: -7px;
+    left: -20px;
+    position: relative;
+}
+.cursorleft2 {
+    float: right;
+    bottom: 50px;
+    left: 24px;
+    position: relative;
+    display: none;
+}
+.cursorright3 {
+    float: right;
+    bottom: 42px;
+    left: 22px;
+    position: relative;
+    display: none;
+}
+.row {
+    margin: 0 auto !important;
+}
+.form-group {
+    margin: 0 auto !important;
+    padding: 0px 0px 5px 0px !important;
+}
+.inputGroupContainer {
+    height: 50px;
+}
+.selectContainer {
+    height: 50px;
+}
+.radioContainer {
+    height: 50px;
+}
+.simley {
+    color: #cca300;
+}
+.happy {
+    color: green;
+    font-size: 25px;
+}
+.sad {
+    color: red;
+    font-size: 18px;
+}
+.cursorcheck{
+	float: right;
+    bottom:15px;
+    right: 11px;
+    position: relative;
+}
+
+
